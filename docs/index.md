@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Simple API Documentation
 
 [![Run tests](https://github.com/karlosss/simple_api/actions/workflows/run_tests.yml/badge.svg)](https://github.com/karlosss/simple_api/actions/workflows/run_tests.yml)
 
