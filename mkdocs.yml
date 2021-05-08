@@ -1,1 +1,39 @@
-site_name: My Docs
+site_name: Simple API Documentation
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: blue
+
+extra_css: [extra.css]
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+use_directory_urls: false
+
+plugins:
+- search
+
+nav:
+  - Introduction: index.md
+  - Installation: installation.md
+  - Quick Start: QuickStart.md
+  - Tutorial:
+      - Controlling fields: tutorial/fields.md
+      - Multiple objects per model: tutorial/multiobjects.md
+      - Custom filters: tutorial/filters.md
+      - Custom Actions: tutorial/actions.md
+      - Permissions: tutorial/permissions.md
+      - Validators: tutorial/validators.md
+      - Metaschema: tutorial/metaschema.md
+      - Object without Django model: tutorial/pureObjects.md
+  - Simple API reference:
+      - Objects Reference: objectTypes.md
+      - Actions Reference: actionArgs.md
+  - Security: security.md
+  - Simple API Admin: frontend.md
+  - Description of tests: tests.md
+  - Original README: original_readme.md

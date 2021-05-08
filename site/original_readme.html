@@ -1,0 +1,1529 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Original README - Simple API Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simple-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Simple API Documentation" class="md-header__button md-logo" aria-label="Simple API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Simple API Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Original README
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Simple API Documentation" class="md-nav__button md-logo" aria-label="Simple API Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Simple API Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation.html" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="QuickStart.html" class="md-nav__link">
+        Quick Start
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Tutorial
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tutorial" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorial
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/fields.html" class="md-nav__link">
+        Controlling fields
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/multiobjects.html" class="md-nav__link">
+        Multiple objects per model
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/filters.html" class="md-nav__link">
+        Custom filters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/actions.html" class="md-nav__link">
+        Custom Actions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/permissions.html" class="md-nav__link">
+        Permissions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/validators.html" class="md-nav__link">
+        Validators
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/metaschema.html" class="md-nav__link">
+        Metaschema
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/pureObjects.html" class="md-nav__link">
+        Object without Django model
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Simple API reference
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Simple API reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Simple API reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="objectTypes.html" class="md-nav__link">
+        Objects Reference
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="actionArgs.html" class="md-nav__link">
+        Actions Reference
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="security.html" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="frontend.html" class="md-nav__link">
+        Simple API Admin
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tests.html" class="md-nav__link">
+        Description of tests
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Original README
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="original_readme.html" class="md-nav__link md-nav__link--active">
+        Original README
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-the-project" class="md-nav__link">
+    Purpose of the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users-guide" class="md-nav__link">
+    User's Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="User's Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlling-the-fields" class="md-nav__link">
+    Controlling the fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-objects-for-one-model" class="md-nav__link">
+    Multiple Objects for one model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-filtering" class="md-nav__link">
+    Custom filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-actions" class="md-nav__link">
+    Custom actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-schemas" class="md-nav__link">
+    Meta schemas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-objects-without-django-model" class="md-nav__link">
+    Creating Objects without Django model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-works" class="md-nav__link">
+    Future Works
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose-of-the-project" class="md-nav__link">
+    Purpose of the project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#users-guide" class="md-nav__link">
+    User's Guide
+  </a>
+  
+    <nav class="md-nav" aria-label="User's Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#controlling-the-fields" class="md-nav__link">
+    Controlling the fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-objects-for-one-model" class="md-nav__link">
+    Multiple Objects for one model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-filtering" class="md-nav__link">
+    Custom filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-actions" class="md-nav__link">
+    Custom actions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permissions" class="md-nav__link">
+    Permissions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meta-schemas" class="md-nav__link">
+    Meta schemas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-objects-without-django-model" class="md-nav__link">
+    Creating Objects without Django model
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#future-works" class="md-nav__link">
+    Future Works
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="simple-api">Simple API</h1>
+<p><a href="https://github.com/ladal1/simple_api/actions/workflows/run_tests.yml"><img alt="Run tests" src="https://github.com/ladal1/simple_api/actions/workflows/run_tests.yml/badge.svg" /></a></p>
+<h2 id="purpose-of-the-project">Purpose of the project</h2>
+<p>After writing Django models, Simple API builds an API (currently, only GraphQL is supported) extracting the information from the model and requiring to write as little code as possible.</p>
+<p>Built on some amazing ideas of <a href="https://github.com/eamigo86/graphene-django-extras">graphene-django-extras</a>. The main difference is that Simple API is a bit more high-level and allows the programmer to write even less code.</p>
+<h2 id="users-guide">User's Guide</h2>
+<h3 id="introduction">Introduction</h3>
+<p>Let's build a forum where users can create posts.
+The models are as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">Model</span><span class="p">,</span> <span class="n">EmailField</span><span class="p">,</span> <span class="n">CharField</span><span class="p">,</span> \
+    <span class="n">TextField</span><span class="p">,</span> <span class="n">BooleanField</span><span class="p">,</span> <span class="n">ForeignKey</span><span class="p">,</span> <span class="n">CASCADE</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="n">EmailField</span><span class="p">()</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">first_name</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">last_name</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">bio</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">()</span>
+    <span class="n">is_admin</span> <span class="o">=</span> <span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">full_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">first_name</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_name</span> 
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> (</span><span class="si">{}</span><span class="s2">)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">full_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">author</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">CustomUser</span><span class="p">,</span> <span class="n">on_delete</span><span class="o">=</span><span class="n">CASCADE</span><span class="p">)</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">TextField</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> by </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">author</span><span class="p">)</span>
+</code></pre></div>
+<p>Now, we create a Simple API object for each model. We also generate GraphQL API and build URL patterns so that we can access the API:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>And that's it! Let's explore what Simple API actually generated for us. Open up <code>/api/</code> in the browser (i.e. <a href="http://localhost:8000/api/">http://localhost:8000/api/</a>) and see the schema:</p>
+<div class="highlight"><pre><span></span><code>// query
+
+PostDetail(id: Int!): Post!
+PostList(filters: PostFiltersInput): PostList!
+CustomUserDetail(id: Int!): CustomUser!
+CustomUserList(filters: CustomUserFiltersInput): CustomUserList!
+__objects: [ObjectInfo!]!
+__actions: [ActionInfo!]!
+
+// mutation
+
+CustomUserCreate(data: CustomUserCreateInput!): CustomUser!
+CustomUserUpdate(data: CustomUserUpdateInput!id: Int!): CustomUser!
+CustomUserDelete(id: Int!): Boolean!
+PostCreate(data: PostCreateInput!): Post!
+PostUpdate(data: PostUpdateInput!id: Int!): Post!
+PostDelete(id: Int!): Boolean!
+</code></pre></div>
+<p>With close to zero effort, we just got a way to do list, show detail, create, update and delete both of our entities. Let's try them one by one.</p>
+<p>Create a user:</p>
+<div class="highlight"><pre><span></span><code><span class="k">mutation</span> <span class="nf">create_user</span><span class="p">{</span>
+  <span class="n">CustomUserCreate</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">email</span><span class="p">:</span> <span class="s">&quot;user1@example.com&quot;</span><span class="p">,</span> 
+    <span class="n">username</span><span class="p">:</span> <span class="s">&quot;adam&quot;</span><span class="p">,</span> 
+    <span class="n">first_name</span><span class="p">:</span> <span class="s">&quot;Adam&quot;</span><span class="p">,</span> 
+    <span class="n">last_name</span><span class="p">:</span> <span class="s">&quot;First&quot;</span><span class="p">,</span> 
+    <span class="n">password</span><span class="p">:</span> <span class="s">&quot;secret&quot;</span><span class="p">,</span>
+    <span class="n">bio</span><span class="p">:</span> <span class="s">&quot;Just an ordinary person...&quot;</span><span class="p">,</span>
+  <span class="p">}){</span>
+    <span class="n">id</span>
+    <span class="n">email</span>
+    <span class="n">username</span>
+    <span class="n">first_name</span>
+    <span class="n">last_name</span>
+    <span class="n">password</span>
+    <span class="n">bio</span>
+    <span class="n">is_admin</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserCreate</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">email</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">user1</span><span class="nd">@example</span><span class="err">.com&quot;</span><span class="p">,</span>
+      <span class="err">&quot;username&quot;:</span> <span class="err">&quot;adam&quot;</span><span class="p">,</span>
+      <span class="err">&quot;first_name&quot;:</span> <span class="err">&quot;Adam&quot;</span><span class="p">,</span>
+      <span class="err">&quot;last_name&quot;:</span> <span class="err">&quot;First&quot;</span><span class="p">,</span>
+      <span class="err">&quot;password&quot;:</span> <span class="err">&quot;secret&quot;</span><span class="p">,</span>
+      <span class="err">&quot;bio&quot;:</span> <span class="err">&quot;Just</span> <span class="err">an</span> <span class="err">ordinary</span> <span class="err">person...&quot;</span><span class="p">,</span>
+      <span class="err">&quot;is_admin&quot;:</span> <span class="err">false</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div>
+<p>Do a detail of the first user:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">detail_of_user</span><span class="p">{</span>
+  <span class="n">CustomUserDetail</span><span class="p">(</span><span class="n">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">){</span>
+    <span class="n">id</span>
+    <span class="n">email</span>
+    <span class="n">username</span>
+    <span class="n">first_name</span>
+    <span class="n">last_name</span>
+    <span class="n">password</span>
+    <span class="n">bio</span>
+    <span class="n">is_admin</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserDetail</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">email</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">user1</span><span class="nd">@example</span><span class="err">.com&quot;</span><span class="p">,</span>
+      <span class="err">&quot;username&quot;:</span> <span class="err">&quot;adam&quot;</span><span class="p">,</span>
+      <span class="err">&quot;first_name&quot;:</span> <span class="err">&quot;Adam&quot;</span><span class="p">,</span>
+      <span class="err">&quot;last_name&quot;:</span> <span class="err">&quot;First&quot;</span><span class="p">,</span>
+      <span class="err">&quot;password&quot;:</span> <span class="err">&quot;secret&quot;</span><span class="p">,</span>
+      <span class="err">&quot;bio&quot;:</span> <span class="err">&quot;Just</span> <span class="err">an</span> <span class="err">ordinary</span> <span class="err">person...&quot;</span><span class="p">,</span>
+      <span class="err">&quot;is_admin&quot;:</span> <span class="err">false</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div>
+<p>The listing action is a bit more interesting. In the schema, we can see there an optional parameter to it, <code>CustomUserFiltersInput</code>. Let's explore its fields:</p>
+<div class="highlight"><pre><span></span><code>email: String
+email__contains: String
+email__endswith: String
+email__exact: String
+email__icontains: String
+email__in: [String!]
+email__iregex: String
+email__isnull: Boolean
+email__regex: String
+email__startswith: String
+username: String
+username__contains: String
+...
+ordering: [String!]
+</code></pre></div>
+<p>There are automatically generated filter fields for each of the parameters, and the option to specity the order. Both of those use Django syntax.</p>
+<p>Upon return, a listing does not just output a list of objects, but rather a <code>CustomUserList</code>, which has the following fields:</p>
+<div class="highlight"><pre><span></span><code>count: Int!
+data(limit: Int = 20, offset: Int = 0): [CustomUser!]!
+</code></pre></div>
+<p><code>count</code> returns the length of the list and <code>data</code> holds the actual data, accepting two optional parameters, <code>limit</code> and <code>offset</code>. This allows for pagination.</p>
+<p>Now we can create another user and then list both:</p>
+<div class="highlight"><pre><span></span><code><span class="k">mutation</span> <span class="nf">create_another_user</span><span class="p">{</span>
+  <span class="n">CustomUserCreate</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="p">{</span>
+    <span class="n">email</span><span class="p">:</span> <span class="s">&quot;user2@example.com&quot;</span><span class="p">,</span> 
+    <span class="n">username</span><span class="p">:</span> <span class="s">&quot;bob&quot;</span><span class="p">,</span> 
+    <span class="n">first_name</span><span class="p">:</span> <span class="s">&quot;Bob&quot;</span><span class="p">,</span> 
+    <span class="n">last_name</span><span class="p">:</span> <span class="s">&quot;Second&quot;</span><span class="p">,</span> 
+    <span class="n">password</span><span class="p">:</span> <span class="s">&quot;secret&quot;</span><span class="p">,</span>
+    <span class="n">bio</span><span class="p">:</span> <span class="s">&quot;Just another ordinary person...&quot;</span><span class="p">,</span>
+  <span class="p">}){</span>
+    <span class="n">id</span>
+    <span class="n">email</span>
+    <span class="n">username</span>
+    <span class="n">first_name</span>
+    <span class="n">last_name</span>
+    <span class="n">password</span>
+    <span class="n">bio</span>
+    <span class="n">is_admin</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">query</span> <span class="nf">list_users</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">{</span>
+    <span class="n">count</span>
+    <span class="n">data</span><span class="p">{</span>
+      <span class="n">id</span>
+      <span class="n">first_name</span>
+      <span class="n">last_name</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserList</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">count</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="err">[</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Adam</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">First</span><span class="err">&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Bob</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Second</span><span class="err">&quot;</span>
+        <span class="p">}</span>
+      <span class="err">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We can also apply some filters to the listing:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">list_filtered_users</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">(</span><span class="n">filters</span><span class="p">:</span> <span class="p">{</span><span class="n">first_name__startswith</span><span class="p">:</span> <span class="s">&quot;A&quot;</span><span class="p">}){</span>
+    <span class="n">count</span>
+    <span class="n">data</span><span class="p">{</span>
+      <span class="n">id</span>
+      <span class="n">first_name</span>
+      <span class="n">last_name</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserList</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">count</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="err">[</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Adam</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">First</span><span class="err">&quot;</span>
+        <span class="p">}</span>
+      <span class="err">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Or we can reorder the results: the primary key is the password, which is the same for both, so the secondary key is applied, which is <code>id</code> in the descending order:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">list_ordering_users</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">(</span><span class="n">filters</span><span class="p">:</span> <span class="p">{</span><span class="n">ordering</span><span class="p">:</span> <span class="p">[</span><span class="s">&quot;password&quot;</span><span class="p">,</span><span class="s">&quot;-id&quot;</span><span class="p">]}){</span>
+    <span class="n">count</span>
+    <span class="n">data</span><span class="p">{</span>
+      <span class="n">id</span>
+      <span class="n">first_name</span>
+      <span class="n">last_name</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserList</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">count</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="err">[</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Bob</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Second</span><span class="err">&quot;</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Adam</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">First</span><span class="err">&quot;</span>
+        <span class="p">}</span>
+      <span class="err">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Of course, we can also paginate the results:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">list_paginate_users</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">{</span>
+    <span class="n">count</span>
+    <span class="n">data</span><span class="p">(</span><span class="n">offset</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">limit</span><span class="p">:</span> <span class="mi">1</span><span class="p">){</span>
+      <span class="n">id</span>
+      <span class="n">first_name</span>
+      <span class="n">last_name</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserList</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">count</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="err">[</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">2</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Bob</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Second</span><span class="err">&quot;</span>
+        <span class="p">}</span>
+      <span class="err">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Next, we can update a user's password like this:</p>
+<div class="highlight"><pre><span></span><code><span class="k">mutation</span> <span class="nf">update_password</span><span class="p">{</span>
+  <span class="n">CustomUserUpdate</span><span class="p">(</span><span class="n">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="p">{</span><span class="n">password</span><span class="p">:</span> <span class="s">&quot;moresecret&quot;</span><span class="p">}){</span>
+    <span class="n">id</span>
+    <span class="n">password</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserUpdate</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">password</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">moresecret</span><span class="err">&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>And we might delete the second user:</p>
+<div class="highlight"><pre><span></span><code><span class="k">mutation</span> <span class="nf">delete_user</span><span class="p">{</span>
+  <span class="n">CustomUserDelete</span><span class="p">(</span><span class="n">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserDelete</span><span class="err">&quot;:</span> <span class="n">true</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Now, when we list the users again, we can see that there is only one user and the password is changed:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">list_users_with_password</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">{</span>
+    <span class="n">count</span>
+    <span class="n">data</span><span class="p">{</span>
+      <span class="n">id</span>
+      <span class="n">first_name</span>
+      <span class="n">last_name</span>
+      <span class="n">password</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserList</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">count</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="err">[</span>
+        <span class="p">{</span>
+          <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">first_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">Adam</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">last_name</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">First</span><span class="err">&quot;</span><span class="p">,</span>
+          <span class="err">&quot;</span><span class="n">password</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">moresecret</span><span class="err">&quot;</span>
+        <span class="p">}</span>
+      <span class="err">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>And that concludes the showcase of the basic API. Of course, it is very far from what we would like to run on production - we probably don't want the password to be visible and deleting users should be only possible by admin. But as a starting point, this should be good enough.</p>
+<h3 id="controlling-the-fields">Controlling the fields</h3>
+<p>You for sure noticed that the <code>CustomUser</code> model has a property that is not accessible in the API. This is expected - Simple API only automatically converts fields, relations, and reverse relations (you maybe noticed that a <code>CustomUser</code> in the first example has <code>post_set</code> field in the API). At the end of this section, we show how to add the property.</p>
+<p>But let's start from the beginning. Assume the same model, but the following <code>Object</code>s:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">object.datatypes</span> <span class="kn">import</span> <span class="n">StringType</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">class</span> <span class="nc">ShortCustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+    <span class="n">only_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;first_name&quot;</span><span class="p">,</span> <span class="s2">&quot;last_name&quot;</span><span class="p">)</span>
+    <span class="n">output_custom_fields</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;full_name&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">()}</span>
+
+
+<span class="k">class</span> <span class="nc">ShortPost</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+    <span class="n">exclude_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;content&quot;</span><span class="p">,)</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>By default, Simple API extracts all fields, models, and reverse relations. If this is not what we want, we have two ways to specify: either list the fields we want using <code>only_fields</code>, or list the fields we don't want using <code>exclude_fields</code> (but not both at the same time, of course).</p>
+<p>After the set of extracted fields is determined, we can add <code>custom_fields</code>: each custom field must also have its type specified, as there is no way Simple API can find that out.</p>
+<p>Note that model properties are only output fields. Simple API objects can be also used as inputs and in such case, we do not want read-only fields there. Custom fields that should be both for input and output are specified in <code>custom_fields</code>, fields only for input in <code>input_custom_fields</code>, and those only for output in <code>output_custom_fields</code>.</p>
+<p>The schema then looks like this:
+<div class="highlight"><pre><span></span><code>// Short post
+id: Int!
+title: String!
+author: ShortCustomUser!
+__str__: String!
+__actions: [ActionInfo!]!
+
+// Short custom user
+id: Int!
+first_name: String!
+last_name: String!
+full_name: String!
+__str__: String!
+__actions: [ActionInfo!]!
+</code></pre></div></p>
+<p>As we can see, the primary key field (in this case <code>id</code>) is always included and cannot be got rid of. That comes with a reason - without primary key, the CRUD operations would just not work.</p>
+<p>If a custom field happens to have the same name as an extracted field, the original field is overridden. This might be useful for example if a model field is nullable, but we don't want it to be nullable in the API.</p>
+<h3 id="multiple-objects-for-one-model">Multiple Objects for one model</h3>
+<p>Sometimes, we want multiple <code>Object</code>s for the same model - for example, the email of a user should be visible only by the user himself and maybe by admins. A way to do this is creating two objects: one for admins, and one for the rest.
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+    <span class="n">class_for_related</span> <span class="o">=</span> <span class="kc">False</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUserPublic</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+    <span class="n">exclude_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">,</span> <span class="s2">&quot;password&quot;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Everything should be self-explanatory except for <code>class_for_related</code>. When building relations automatically, Simple API needs to determine a type to return. As long as we have only one <code>Object</code> per model, it is obvious as there is no choice. But now Simple API does not know: should it make the field <code>author</code> of the <code>Post</code> model of type <code>CustomUser</code>, or <code>CustomUserPublic</code>? And this is exactly what <code>class_for_related</code> means: it uses the one which has it set to <code>True</code>. That can be seen in the schema - the type of <code>author</code> is indeed <code>CustomUserPublic</code>, because it is set to be the class to resolve relations:
+<div class="highlight"><pre><span></span><code>// Post
+id: Int!
+title: String!
+content: String!
+author: CustomUserPublic!
+__str__: String!
+__actions: [ActionInfo!]!
+</code></pre></div></p>
+<p>If the one-fits-them-all method is not fine-grained enough, the field for relations can be overridden the same way as any other field in <code>custom_fields</code>.</p>
+<h3 id="custom-filtering">Custom filtering</h3>
+<p>As shown in the beginning, a <code>ListAction</code> has a builtin way to filter the results: it does so by filters automatically generated from fields of the target model.</p>
+<p>It is, of course, possible to alter the set of filters generated for a field by overriding the field and specify the filters as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">object.datatypes</span> <span class="kn">import</span> <span class="n">StringType</span><span class="p">,</span> <span class="n">ObjectType</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+    <span class="n">custom_fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">(</span><span class="n">only_filters</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;email__exact&quot;</span><span class="p">,</span> <span class="s2">&quot;email__icontains&quot;</span><span class="p">)),</span>
+        <span class="s2">&quot;first_name&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">(</span><span class="n">exclude_filters</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;first_name__regex&quot;</span><span class="p">,</span> <span class="s2">&quot;first_name__iregex&quot;</span><span class="p">)),</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+    <span class="n">output_custom_fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="n">ObjectType</span><span class="p">(</span><span class="n">CustomUser</span><span class="p">,</span> <span class="n">exclude_filters</span><span class="o">=</span><span class="p">(),</span>
+                             <span class="n">custom_filters</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;author__email&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">(</span><span class="n">nullable</span><span class="o">=</span><span class="kc">True</span><span class="p">)})</span>
+    <span class="p">}</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>The <code>only_filters</code>, <code>exclude_filters</code> and <code>custom_filters</code> work the same way as filtering fields, with the exception that without modifiers, no filters are created. This is for obvious reasons: if we create a custom field, we probably don't want any filters for it, as it is probably not a field in the database and Django would just crash on those non-existent filters.</p>
+<p>Note that when overriding a foreign key field, both the original filters (if intended to keep) and the custom ones need to be specified.</p>
+<h3 id="custom-actions">Custom actions</h3>
+<p>So far, we only were using the automatically generated actions - <code>list</code>, <code>detail</code>, <code>create</code>, <code>update</code> and <code>delete</code>. Now we show how to add more: say a user should be able to change their password and list their own posts. But let's start from the beginning.</p>
+<p>First, we can modify the way the basic actions are generated:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.actions</span> <span class="kn">import</span> <span class="n">CreateAction</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">def</span> <span class="nf">custom_create_user</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">CustomUserModel</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+        <span class="n">email</span><span class="o">=</span><span class="s2">&quot;default@example.com&quot;</span><span class="p">,</span>
+        <span class="n">username</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">][</span><span class="s2">&quot;username&quot;</span><span class="p">],</span>
+        <span class="n">first_name</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span>
+        <span class="n">last_name</span><span class="o">=</span><span class="s2">&quot;Surname&quot;</span><span class="p">,</span>
+        <span class="n">password</span><span class="o">=</span><span class="s2">&quot;default&quot;</span>
+    <span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+
+    <span class="n">create_action</span> <span class="o">=</span> <span class="n">CreateAction</span><span class="p">(</span><span class="n">only_fields</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,),</span> <span class="n">exec_fn</span><span class="o">=</span><span class="n">custom_create_user</span><span class="p">)</span>
+    <span class="n">update_action</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">delete_action</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">mutation</span> <span class="nf">create_user_username_only</span><span class="p">{</span>
+  <span class="n">CustomUserCreate</span><span class="p">(</span><span class="n">data</span><span class="p">:</span> <span class="p">{</span><span class="n">username</span><span class="p">:</span> <span class="s">&quot;cindy&quot;</span><span class="p">}){</span>
+    <span class="n">id</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="err">//</span> <span class="err">output</span>
+<span class="p">{</span>
+  <span class="err">&quot;</span><span class="n">data</span><span class="err">&quot;:</span> <span class="p">{</span>
+    <span class="err">&quot;</span><span class="n">CustomUserCreate</span><span class="err">&quot;:</span> <span class="p">{</span>
+      <span class="err">&quot;</span><span class="n">id</span><span class="err">&quot;:</span> <span class="err">1</span><span class="p">,</span>
+      <span class="err">&quot;</span><span class="n">email</span><span class="err">&quot;:</span> <span class="err">&quot;</span><span class="n">default</span><span class="nd">@example</span><span class="err">.com&quot;</span><span class="p">,</span>
+      <span class="err">&quot;username&quot;:</span> <span class="err">&quot;cindy&quot;</span><span class="p">,</span>
+      <span class="err">&quot;first_name&quot;:</span> <span class="err">&quot;Name&quot;</span><span class="p">,</span>
+      <span class="err">&quot;last_name&quot;:</span> <span class="err">&quot;Surname&quot;</span><span class="p">,</span>
+      <span class="err">&quot;password&quot;:</span> <span class="err">&quot;default&quot;</span><span class="p">,</span>
+      <span class="err">&quot;bio&quot;:</span> <span class="err">&quot;&quot;</span><span class="p">,</span>
+      <span class="err">&quot;is_admin&quot;:</span> <span class="err">false</span>
+    <span class="err">}</span>
+  <span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div>
+<p>Our customized <code>CreateAction</code> has only one data parameter, the username, and the rest is filled with some default values, as specified in <code>custom_create_user</code>. If an action should not be generated at all, just set it to <code>None</code>.</p>
+<p>Let's say we want the users to be able to change their own password. For this, we need to add a custom actions as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.actions</span> <span class="kn">import</span> <span class="n">UpdateAction</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">CustomUser</span> <span class="k">as</span> <span class="n">CustomUserModel</span><span class="p">,</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+<span class="k">class</span> <span class="nc">CustomUser</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">CustomUserModel</span>
+
+    <span class="n">custom_actions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;changePassword&quot;</span><span class="p">:</span> <span class="n">UpdateAction</span><span class="p">(</span><span class="n">only_fields</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;password&quot;</span><span class="p">,),</span> 
+                                       <span class="n">required_fields</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;password&quot;</span><span class="p">,))</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>By default, the fields of an <code>UpdateAction</code> are not mandatory - it would be very annoying to
+specify the whole large object when modifying just a single value! This, however, is not
+always what we want: when the action is supposed to change only the password, the new password
+should be mandatory to provide. This is exactly what <code>required_fields</code> stands for: specify
+the fields which should be required, even in an <code>UpdateAction</code>.</p>
+<p>Sometimes, an action is not a CRUD operation. For these cases, the custom <code>exec_fn</code> must be
+written by the user. Refer to <code>ModelAction</code> or <code>ModelObjectAction</code>, depending if the action
+should operate on the object class (like <code>create</code> for example), or on specific instances
+of the object (like <code>update</code> or <code>delete</code> for example) respectively.</p>
+<h3 id="permissions">Permissions</h3>
+<p>The forum now has one obvious problem mentioned above - everyone can do everything. Now it is time to change it. 
+Each action in Simple API might include a set of permissions required to pass - if it does not, an error occurs
+and the action is not performed.</p>
+<p>The permissions should only determine if a user is allowed to execute an action or not based on the user and the
+current application state. The input data for the action should not be considered. 
+<strong>TODO: Rejection based on input data is not implemented yet.</strong></p>
+<p>Permissions are shipped as classes. The key part is overriding the <code>permission_statement</code> method:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django_object.permissions</span> <span class="kn">import</span> <span class="n">DjangoPermission</span>
+<span class="k">class</span> <span class="nc">IsAuthenticated</span><span class="p">(</span><span class="n">DjangoPermission</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">permission_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">request</span> <span class="ow">and</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span> <span class="ow">and</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_authenticated</span>
+</code></pre></div>
+<p>Let's say we now want to create an <code>IsAdmin</code> permission class, which would allow through only those users
+which have either <code>is_admin</code> or <code>is_superuser</code> set. This is what we would do:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django_object.permissions</span> <span class="kn">import</span> <span class="n">IsAuthenticated</span>
+<span class="k">class</span> <span class="nc">IsAdmin</span><span class="p">(</span><span class="n">IsAuthenticated</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">permission_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_staff</span> <span class="ow">or</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_superuser</span>
+</code></pre></div>
+<p>You might be wondering why don't we call the <code>permission_statement</code> method of the superclass. One would do
+this all the time, therefore Simple API just calls the method of the superclass automatically, based on
+the inheritance chain. This saves some boilerplate code and makes the result a bit more readable.</p>
+<p>Let's see how to use the permissions in practice. Our forum API enhanced with the permissions could look
+as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="n">User</span> <span class="k">as</span> <span class="n">UserModel</span>
+
+<span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">django_object.actions</span> <span class="kn">import</span> <span class="n">CreateAction</span><span class="p">,</span> <span class="n">UpdateAction</span><span class="p">,</span> <span class="n">DeleteAction</span><span class="p">,</span> <span class="n">DetailAction</span><span class="p">,</span> <span class="n">ListAction</span><span class="p">,</span> <span class="n">ModelAction</span>
+<span class="kn">from</span> <span class="nn">django_object.django_object</span> <span class="kn">import</span> <span class="n">DjangoObject</span>
+<span class="kn">from</span> <span class="nn">django_object.permissions</span> <span class="kn">import</span> <span class="n">IsAuthenticated</span>
+<span class="kn">from</span> <span class="nn">object.datatypes</span> <span class="kn">import</span> <span class="n">StringType</span>
+<span class="kn">from</span> <span class="nn">object.permissions</span> <span class="kn">import</span> <span class="n">Or</span>
+<span class="kn">from</span> <span class="nn">.models</span> <span class="kn">import</span> <span class="n">Post</span> <span class="k">as</span> <span class="n">PostModel</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+
+
+<span class="k">class</span> <span class="nc">IsAdmin</span><span class="p">(</span><span class="n">IsAuthenticated</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">permission_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_staff</span> <span class="ow">or</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">is_superuser</span>
+
+
+<span class="k">class</span> <span class="nc">IsSelf</span><span class="p">(</span><span class="n">IsAuthenticated</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">permission_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span> <span class="o">==</span> <span class="n">obj</span>
+
+
+<span class="k">class</span> <span class="nc">IsTheirs</span><span class="p">(</span><span class="n">IsAuthenticated</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">permission_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span> <span class="o">==</span> <span class="n">obj</span><span class="o">.</span><span class="n">author</span>
+
+
+<span class="k">def</span> <span class="nf">set_password</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="c1"># this would set a password to request.user, but for the showcase it is not needed</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">create_post</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">PostModel</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">],</span> <span class="n">content</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">],</span> <span class="n">author</span><span class="o">=</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">UserModel</span>
+    <span class="n">only_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;username&quot;</span><span class="p">,</span> <span class="p">)</span>
+
+    <span class="n">create_action</span> <span class="o">=</span> <span class="n">CreateAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAdmin</span><span class="p">)</span>
+    <span class="n">update_action</span> <span class="o">=</span> <span class="n">UpdateAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAdmin</span><span class="p">)</span>
+    <span class="n">delete_action</span> <span class="o">=</span> <span class="n">DeleteAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAdmin</span><span class="p">)</span>
+    <span class="n">detail_action</span> <span class="o">=</span> <span class="n">DetailAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAdmin</span><span class="p">)</span>
+    <span class="n">list_action</span> <span class="o">=</span> <span class="n">ListAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAdmin</span><span class="p">)</span>
+
+    <span class="n">custom_actions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;changePassword&quot;</span><span class="p">:</span> <span class="n">ModelAction</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">()},</span> <span class="n">exec_fn</span><span class="o">=</span><span class="n">set_password</span><span class="p">,</span>
+                                      <span class="n">permissions</span><span class="o">=</span><span class="n">IsAuthenticated</span><span class="p">),</span>
+        <span class="s2">&quot;myProfile&quot;</span><span class="p">:</span> <span class="n">ModelAction</span><span class="p">(</span><span class="n">exec_fn</span><span class="o">=</span><span class="k">lambda</span> <span class="n">request</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="n">permissions</span><span class="o">=</span><span class="n">IsAuthenticated</span><span class="p">)</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Post</span><span class="p">(</span><span class="n">DjangoObject</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">PostModel</span>
+
+    <span class="n">create_action</span> <span class="o">=</span> <span class="n">CreateAction</span><span class="p">(</span><span class="n">exclude_fields</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;author_id&quot;</span><span class="p">,),</span> <span class="n">permissions</span><span class="o">=</span><span class="n">IsAuthenticated</span><span class="p">,</span> <span class="n">exec_fn</span><span class="o">=</span><span class="n">create_post</span><span class="p">)</span>
+    <span class="n">update_action</span> <span class="o">=</span> <span class="n">UpdateAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">Or</span><span class="p">(</span><span class="n">IsAdmin</span><span class="p">,</span> <span class="n">IsTheirs</span><span class="p">))</span>
+    <span class="n">delete_action</span> <span class="o">=</span> <span class="n">DeleteAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">Or</span><span class="p">(</span><span class="n">IsAdmin</span><span class="p">,</span> <span class="n">IsTheirs</span><span class="p">))</span>
+    <span class="n">list_action</span> <span class="o">=</span> <span class="n">ListAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAuthenticated</span><span class="p">)</span>
+    <span class="n">detail_action</span> <span class="o">=</span> <span class="n">DetailAction</span><span class="p">(</span><span class="n">permissions</span><span class="o">=</span><span class="n">IsAuthenticated</span><span class="p">)</span>
+
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>This slightly more comprehensive example shows how one could do the forum. Let's have two
+types of users: admins and the others. Everyone can view their own profile, change their own
+password, create and list all posts and edit and delete their own posts. Admins on top of that
+can manipulate the database of users and also their posts.</p>
+<p>As we can see, for a logical expression consisting of multiple permissions, we can use
+<code>And</code>, <code>Or</code> and <code>Not</code> connectors, which form a universal set of connectors, and therefore
+can express any logical expression. For sure, we could write a permission class with permission 
+statement covering exactly those options, but this way the code is more readable and therefore
+less error-prone.</p>
+<p>Besides the logical expressions, we also show how to use <code>ModelAction</code> and a custom create 
+(the autor of the post is the one who sent the create request).</p>
+<h3 id="meta-schemas">Meta schemas</h3>
+<p><strong>Note: this part will likely significantly change in the future.</strong></p>
+<p>GraphiQL already contains some information about types, parameters, etc. Meta schemas
+of Simple API extend this schema by the information about actions and permissions. These
+are supposed to be used in order to maintain loose coupling between the backend and any
+possible frontend clients.</p>
+<p>On the top level, there are two meta endpoints <code>__objects</code> and <code>__actions</code>. They can be
+queried as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span><span class="p">{</span>
+  <span class="n">__objects</span><span class="p">{</span>
+    <span class="n">name</span>
+    <span class="n">pk_field</span>
+    <span class="n">actions</span><span class="p">{</span>
+      <span class="n">name</span>
+      <span class="n">permitted</span>
+      <span class="n">deny_reason</span>
+      <span class="n">retry_in</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">__actions</span><span class="p">{</span>
+    <span class="n">name</span>
+    <span class="n">permitted</span>
+    <span class="n">deny_reason</span>
+    <span class="n">retry_in</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>__objects</code> contains information about objects. Each object created in Simple API by the user
+is automatically registered. Besides the <code>name</code>, Simple API also tells the frontend which
+is the primary key field, which is necessary for all actions operating on a specific instance
+of an object. Follows a list of actions not bound to any specific instance (such as <code>create</code>
+or <code>list</code>). For each of those actions, Simple API also tells if, based on the user and current
+system state, the action is allowed or not, why it is disallowed, and in what time 
+this information should be refreshed. This way, frontend can display (or not display)
+buttons, disabled buttons, error messages etc.</p>
+<p>The <code>__actions</code> endpoint covers the actions not connected to a particular object.</p>
+<p>Each instance of an object also has <code>__actions</code> field:</p>
+<div class="highlight"><pre><span></span><code><span class="k">query</span> <span class="nf">list_users</span><span class="p">{</span>
+  <span class="n">CustomUserList</span><span class="p">{</span>
+    <span class="n">data</span><span class="p">{</span>
+      <span class="n">id</span>
+      <span class="n">username</span>
+      <span class="n">password</span>
+      <span class="n">__actions</span><span class="p">{</span>
+        <span class="n">name</span>
+        <span class="n">permitted</span>
+        <span class="n">deny_reason</span>
+        <span class="n">retry_in</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This field contains information about actions for that particular instance, for example <code>update</code>
+or <code>delete</code>.</p>
+<h3 id="creating-objects-without-django-model">Creating Objects without Django model</h3>
+<p>It is also possible to create an object without Django model. In fact, Simple API only
+extracts information from Django models, and then completely forgets that Django exists!
+These two layers allow for simple modification of the objects - for example, required fields
+in Django do not need to be required in Simple API: once the information is extracted from
+Django, it can be easily rewritten without looking back to Django, not causing any conflicts.</p>
+<p>An example can be seen here:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">adapters.graphql.graphql</span> <span class="kn">import</span> <span class="n">GraphQLAdapter</span>
+<span class="kn">from</span> <span class="nn">adapters.utils</span> <span class="kn">import</span> <span class="n">generate</span>
+<span class="kn">from</span> <span class="nn">object.actions</span> <span class="kn">import</span> <span class="n">Action</span>
+<span class="kn">from</span> <span class="nn">object.datatypes</span> <span class="kn">import</span> <span class="n">StringType</span><span class="p">,</span> <span class="n">IntegerType</span><span class="p">,</span> <span class="n">ObjectType</span>
+<span class="kn">from</span> <span class="nn">object.object</span> <span class="kn">import</span> <span class="n">Object</span>
+<span class="kn">from</span> <span class="nn">simple_api.adapters.graphql.utils</span> <span class="kn">import</span> <span class="n">build_patterns</span>
+<span class="kn">from</span> <span class="nn">utils</span> <span class="kn">import</span> <span class="n">AttrDict</span>
+
+
+<span class="k">def</span> <span class="nf">get_by_id</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">AttrDict</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span> <span class="n">car</span><span class="o">=</span><span class="n">AttrDict</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;BMW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">))</span>
+
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">(),</span>
+        <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="n">StringType</span><span class="p">()</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Owner</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">IntegerType</span><span class="p">(),</span>
+        <span class="s2">&quot;car&quot;</span><span class="p">:</span> <span class="n">ObjectType</span><span class="p">(</span><span class="n">Car</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="n">actions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;getById&quot;</span><span class="p">:</span> <span class="n">Action</span><span class="p">(</span><span class="n">parameters</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">IntegerType</span><span class="p">()},</span> <span class="n">return_value</span><span class="o">=</span><span class="n">ObjectType</span><span class="p">(</span><span class="s2">&quot;self&quot;</span><span class="p">),</span> <span class="n">exec_fn</span><span class="o">=</span><span class="n">get_by_id</span><span class="p">)</span>
+    <span class="p">}</span>
+
+<span class="n">schema</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">GraphQLAdapter</span><span class="p">)</span>
+<span class="n">patterns</span> <span class="o">=</span> <span class="n">build_patterns</span><span class="p">(</span><span class="s2">&quot;api/&quot;</span><span class="p">,</span> <span class="n">schema</span><span class="p">)</span>
+</code></pre></div>
+<p>The <code>getById</code> action returns a blue BMW with the <code>id</code> specified in its parameter.</p>
+<h3 id="future-works">Future Works</h3>
+<p>Currently (as of January 2021), there is a thesis going on at Czech Technical University 
+in Prague. Its main goal is to generate a frontend off of the API that can make use of all 
+of its features and should allow for easy testing of the backend functionalities.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="tests.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Description of tests
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>

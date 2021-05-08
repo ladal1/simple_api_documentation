@@ -1,17 +1,13 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[![Run tests](https://github.com/karlosss/simple_api/actions/workflows/run_tests.yml/badge.svg)](https://github.com/karlosss/simple_api/actions/workflows/run_tests.yml)
 
-## Commands
+Simple API is an extension to Django and Graphene-Django, aiming to provide a fast-to-work API for already 
+defined Django models with as little code as possible. It provides the ability to include a model
+in an API with basic operations on it with less than 10 lines of code. 
+It aims to support multiple different API architectures, but currently just GraphQL is supported.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+After writing Django models, Simple API builds an API from the information contained purely in models.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Built on some amazing ideas of [graphene-django-extras](https://github.com/eamigo86/graphene-django-extras). 
+The main difference is that Simple API is a bit more high-level and allows the programmer to write even less code.
