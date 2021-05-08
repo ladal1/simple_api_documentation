@@ -16,7 +16,7 @@ The interface allows:
 - filtering and sorting the instances
 
 The interface is independent from GraphQL schema - it uses Simple API specific [Metaschema](tutorial/metaschema.md)
-![Example view](assets/SimpleAPIAdmin.png)
+![Example view](SimpleAPIAdmin.png)
 
 ## Installation
 ###Github
